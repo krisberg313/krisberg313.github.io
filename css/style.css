@@ -1,113 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&family=Righteous&display=swap');
+
+body {
+  background: #d1ccff;
+}
+
+p, li, figcaption, pre {
+  max-width: 960px;
+  font-family: "Podkova";
+  color: #1b09b8;
+}
 
 h1, h2, h3 {
-  font-family: "Comfortaa", "Arial", sans-serif;
+  font-family: "Righteous";
+  color: #1b09b8;
 }
 
-h1 {
-  border-bottom: dashed 3px #de001a;
+main a{
+  color: #ac5be3;
 }
 
-p, li, a, table, figcaption, footer {
-  font-family: "Open sans", "Helvetica", sans-serif;
+#backto {
+  position: fixed;
+  margin-left: 960px;
+  margin-top: 10px;
+  font-family: "Righteous";
+}
+
+main a:hover{
+  background-color: #ca8df2;
+}
+
+main a:active {
+  color: #fff;
 }
 
 nav {
-  background-color: #e35969;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-bottom: 3px;
+  border-bottom: 20px solid #7442eb;
+  padding-bottom: 0;
+  max-width: none;
 }
 
 nav li {
-  display: inline;
-  background-color: #ffd7dc;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
-nav a{
-  color: #de001a;
+nav ul {
+  list-style: none;
+  border-bottom: 1px solid #1b09b8;
+  margin-bottom: 0;
 }
 
-nav a:visited {
-  color: #900c3f;
+nav a {
+  background-color: #7442eb;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #1b09b8;
+  text-decoration: none;
 }
 
-nav a:hover {
-  box-shadow: 2px 2px #a8474d;
+.nonactive:hover {
+  background-color: #5f3cb0;
 }
 
-nav a:active {
-  color: #fff;
-  box-shadow: 2px 2px #a8474d;
+.active {
+  border-bottom: solid 1px #7442eb;
 }
 
-p {
-  max-width: 960px;
+
+#digital img {
+  max-width: 500px;
+  max-height: 500px;
 }
 
-article {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #de001a;
-  max-width: 960px;
-  padding: 3px 3px 3px 3px;
+#digital figure {
+  border: 5px solid #7442eb;
+  border-radius: 1em;
 }
 
-section {
-  background-color: #f5919d;
-  max-width: 1050px;
+#digital figcaption {
+  border: 2px solid #7442eb;
+  font-size: 20px;
+  border-radius: 1em;
+  padding-left: 20px;
+  background-color: #e6e3ff;
 }
 
-table {
-  border-style: dashed;
-  border-width: 2px;
-  border-color: #de001a;
+#digital main {
+  display: grid;
+  grid-template-columns:600px 600px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#blue {
+  position: relative;
+  left: 100px;
+}
+
+#fargo {
+  position: relative;
+  left: 150px;
+}
+
+#kirby {
+  position: relative;
+  top: 50px;
+  left: 5px;
+}
+
+#kirbcaption {
+  position: relative;
+  top: 94px;
+}
+
+#iwasaki {
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+}
+
+#fowler {
+  position: relative;
+  left: 25px;
+}
+
+#traditional figure {
+  border: 5px solid #7442eb;
+  border-radius: 1em;
+}
+
+#traditional img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+#traditional main {
+  display: grid;
+  grid-template-columns:600px 600px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#angel {
+  position: relative;
+  top: 50px;
+  left: 90px;
+}
+
+#angelcaption {
+  position: relative;
+  top: 88px;
+}
+
+#dorian {
+  position: relative;
+  left: 5px;
+  top: 2px;
+}
+
+#doriancaption {
+  position: relative;
+  top: 25px;
+}
+
+#flowers {
+  position: relative;
+  left: 130px;
+  top: 50px;
+}
+
+#flowercaption {
+  position: relative;
+  top: 103px;
+}
+
+#matty {
+  position: relative;
+  left: 43px;
+}
+
+#natalia {
+  position: relative;
+  left: 90px;
+  top: 70px;
+}
+
+#nataliacaption {
+  position: relative;
+  top: 120px;
+}
+
+#gube {
+  position: relative;
+  left: 30px;
+}
+
+#traditional figcaption {
+  border: 2px solid #7442eb;
+  font-size: 20px;
+  border-radius: 1em;
+  padding-left: 20px;
+  background-color: #e6e3ff;
 }
 
 footer {
-  background-color: #e35969;
-}
-
-img {
-  max-width: 960px;
-}
-
-figure {
-  margin-left: 0;
-}
-
-
-#tables {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 300px 200px 200px;
-  grid-gap: 15px;
-  border-bottom: 0;
-}
-
-#ethnic {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-#languages {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-#note {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-}
-
-#religion {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-#life {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  background-color: #7442eb;
+  max-width: none;
 }
